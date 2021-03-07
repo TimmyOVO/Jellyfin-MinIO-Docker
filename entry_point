@@ -1,0 +1,5 @@
+echo $MINIO_ROOT_USER
+echo $MINIO_ROOT_PASSWORD
+echo $MINIO_DIRECTORY
+/oss/minio server $MINIO_DIRECTORY &
+/jellyfin/jellyfin --datadir /config --cachedir /cache --ffmpeg /usr/lib/jellyfin-ffmpeg/ffmpeg
